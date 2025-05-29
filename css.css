@@ -1,0 +1,375 @@
+*{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                font-family: 'Nunito', sans-serif;
+            }
+            .focus-in-expand-fwd {
+	        -webkit-animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            @-webkit-keyframes focus-in-expand-fwd {
+            0% {
+            letter-spacing: -0.5em;
+            -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            opacity: 1;
+            }
+            }
+            @keyframes focus-in-expand-fwd {
+            0% {
+            letter-spacing: -0.5em;
+            -webkit-transform: translateZ(-800px);
+            transform: translateZ(-800px);
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+            }
+            100% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            opacity: 1;
+            }
+            } 
+            body{
+                background-color: #E6F4F1;
+            }
+            header{
+                background-color: #BFD6D9;
+                padding: 8px;
+                margin: 0px;
+                display:flex ;
+                justify-content: space-between;
+            }
+            .tag{
+                float: right;
+                padding: 10px;
+                font-size: 22px;
+            }
+            .sec {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               gap:80px;
+               padding: 50px 20px;
+               padding-left: 7%;
+            } 
+            #imgdiv{
+                padding: 20px;
+                align-content: center;
+            }
+            #img{
+                border-radius: 50%;
+                width: 400px;
+                height:400px;
+            }
+            button{
+                border: none;
+                border-radius: 50%;
+                padding: 30px;
+                margin-right:20px;
+                background-color: #97ACCF;
+                text-align: center;
+            }
+            #para {
+                width: 100%;
+                max-width: 600px;
+                margin: 10px;
+                padding: 10px;
+                font-size: 22px;
+            }
+            .at{
+                margin: 20px;
+                padding: 25px;
+                background-color: #BFD6D9;
+                border-radius: 8px;
+                box-shadow: 10px 10px 5px#93A3BB;
+            }
+            #atm{
+                padding: 7px;
+                font-size: 18px;
+            }
+            hr{
+                border: 1.5px solid #8baaad; 
+                width: 20%;
+                margin-top: 6px;
+            }
+            #skill{
+                margin: 10px;
+                padding: 15px;
+            }
+            #imgsk{
+                float: left;
+                background-color: #97ACCF;
+                border-radius: 20%;
+                margin-right: 8px;
+            }
+            #sk{
+               display: flex;
+               flex-wrap: wrap;
+               justify-content:center;
+               padding: 30px;
+               align-items:normal;
+               gap:30px;
+            }
+            #skd{
+                border-radius: 20px;
+                padding: 15px;
+                background-color: #BFD6D9;
+                width: 40%;
+                margin: 10px;
+                flex:45%; 
+                max-width: 500px; 
+            }
+            h2{
+                padding: 7px;
+            }
+            #project{
+                margin: 20px;
+                padding: 15px;
+                background-color: #BFD6D9;
+                border-radius: 8px;
+            }
+            #pro{
+                display: flex;
+                gap:30px;
+                justify-content: center;
+            }
+            #p1{
+                background-color: #93A3BB;
+                border-radius: 8px;
+                margin: 20px;
+                padding: 15px;
+                height: 10%;
+            }
+            #expertise{
+                margin: 10px;
+                padding: 15px;
+            }
+            .exp{
+                margin: 10px;
+                padding: 15px;
+                font-size: 22px;
+            }
+            #ex1{
+                background:#BFD6D9; 
+                height:6px; 
+                width:100%;
+            }
+            #ex2{
+                background:#93A3BB; 
+                height:6px; 
+            }
+            #resume{
+                margin: 10px;
+                padding: 15px;
+            }
+            #r1{
+                margin: 10px;
+                padding: 15px;
+                display: flex;
+                gap:30px;
+                justify-content: center;
+            }
+            #r2{
+                background-color:#BFD6D9;
+                border-radius: 10px;
+                width: 40%;
+                margin: 10px;
+                padding: 30px;
+                box-shadow: 10px 10px 5px#93A3BB;
+            }
+            ul{
+                font-size: large;
+            }
+            footer{
+                background-color: #BFD6D9;
+                margin: 10px;
+                padding: 20px;
+            }
+            .foo{
+               display: flex;
+               justify-content: center;
+               gap:80px;
+               padding: 7px;
+            }
+            #in{
+                border-radius: 10px;
+                background:#93A3BB; 
+                text-align: center;
+                margin: 10px;
+                padding: 15px;
+                width: 50%;
+            }
+            a{
+                text-decoration-line: none;
+            }
+            @media (max-width: 1024px) {
+            .at{
+                margin: 40px;
+                }
+            .sec {
+                flex-direction: column;
+                padding: 30px 15px;
+                gap: 40px;
+            }
+            #img {
+               width: 250px;
+               height: 250px;
+            }
+            #imgsk{
+                margin-right: 10px;
+            }
+            #sk {
+               flex-direction: column;
+             }
+            #skd {
+                width: 100%;
+                max-width: 100%;
+            }
+            h2{
+                font-size: 30px;
+            }
+            #project{
+                margin: 40px;
+            }
+            #pro {
+              flex-direction: column;
+              align-items: center;
+            }
+            #r1 {
+              flex-direction: column;
+              align-items: center;
+              margin-bottom:20px;
+            }
+            #r2 {
+             width: 100%;
+             margin-bottom:0px;
+            }
+            #expertise{
+                margin:20px;
+            }
+            #resume{
+                margin:20px;
+            }
+            footer{
+                margin:20px;
+            }
+            .foo {
+              flex-direction: column;
+              gap: 40px;
+            }
+          }
+          .jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+}
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+.rotate-in-center {
+	-webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-center {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
